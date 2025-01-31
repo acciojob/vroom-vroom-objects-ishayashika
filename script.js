@@ -9,13 +9,13 @@ class Car {
 	}
 }
 
-class SportsCar {
+class SportsCar extends Car {
 	constructor(make, model, topSpeed){
 		super(make,model);
 		this.topSpeed=topSpeed;
 	}
 		gettopSpeed(){
-		return this.topSpeed;
+		return `${this.topSpeed}`;
 	}
 }
 let car=new Car("Ferrari","Testarossa",200);
