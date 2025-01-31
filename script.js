@@ -1,7 +1,26 @@
 // Complete the js code
-function Car(make, model) {}
+class Car {
+	constructor(make,model){
+		this.make=make;
+		this.model=model;
+	}
+	getMakeModel(){
+		reutrn `${this.make},${this.model}`;
+	}
+}
 
-function SportsCar(make, model, topSpeed) {}
+class SportsCar {
+	constructor(make, model, topSpeed){
+		super(make,model);
+		this.topSpeed=topSpeed;
+	}
+		gettopSpeed(){
+		return this.topSpeed;
+	}
+}
+let car=new Car("Ferrari","Testarossa",200);
+console.log(car.getMakeModel());
+console.log(car.getTopSpeed());
 
 // Do not change the code below
 window.Car = Car;
