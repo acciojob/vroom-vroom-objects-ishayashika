@@ -5,7 +5,7 @@ class Car {
 		this.model=model;
 	}
 	getMakeModel(){
-		reutrn `${this.make},${this.model}`;
+		reutrn `${this.make} ${this.model}`;
 	}
 }
 
