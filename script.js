@@ -5,7 +5,7 @@ class Car {
 		this.model=model;
 	}
 	getMakeModel(){
-		reutrn `${this.make} ${this.model}`;
+		return `${this.make} ${this.model}`;
 	}
 }
 
@@ -14,11 +14,11 @@ class SportsCar extends Car {
 		super(make,model);
 		this.topSpeed=topSpeed;
 	}
-		gettopSpeed(){
+		getTopSpeed(){
 		return `${this.topSpeed}`;
 	}
 }
-let car=new Car("Ferrari","Testarossa",200);
+let car=new SportsCar("Ferrari","Testarossa",200);
 console.log(car.getMakeModel());
 console.log(car.getTopSpeed());
 
